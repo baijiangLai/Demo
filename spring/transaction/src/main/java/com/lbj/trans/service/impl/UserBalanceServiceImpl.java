@@ -1,7 +1,6 @@
 package com.lbj.trans.service.impl;
 
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.lbj.trans.mapper.UserBalanceMapper;
 import com.lbj.trans.pojo.UserBalance;
@@ -9,8 +8,6 @@ import com.lbj.trans.service.UserBalanceService;
 import com.lbj.trans.service.UserProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Propagation;
-import org.springframework.transaction.annotation.Transactional;
 
 /**
  * @Author: {baijiang.lai}

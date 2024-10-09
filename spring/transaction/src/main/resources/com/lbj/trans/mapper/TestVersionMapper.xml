@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lbj.trans.mapper.TestVersionMapper">
+
+    <select id="getMaxNum" resultType="com.lbj.trans.pojo.TestVersion">
+        SELECT t.* FROM test_version t
+        WHERE t.id = (
+            SELECT id FROM test_version
+            WHERE pid = #{pid}
+            ORDER BY id DESC, ver DESC
+            LIMIT 1
+            );
+    </select>
+
+</mapper>

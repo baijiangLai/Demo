@@ -2,9 +2,7 @@ package com.lbj.trans.controller;
 
 
 import com.lbj.trans.service.UserBalanceService;
-import com.lbj.trans.service.UserProductService;
 import com.lbj.trans.vo.UserVo;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -20,7 +18,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/trans")
-@Slf4j
 public class TransController {
 
     @Autowired

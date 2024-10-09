@@ -1,9 +1,7 @@
 package com.lbj.trans.service.impl;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.lbj.trans.mapper.UserProductMapper;
-import com.lbj.trans.pojo.UserBalance;
 import com.lbj.trans.pojo.UserProduct;
 import com.lbj.trans.service.UserProductService;
 import org.springframework.stereotype.Service;
